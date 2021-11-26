@@ -33,6 +33,9 @@ with the values
 3 5 7 13
 */
 
+let oddArray = [3, 5, 7, 13];
+console.log(oddArray);
+
 /*Example 
 Now we will access the values
 in array*/
@@ -51,6 +54,7 @@ begin at 0.*/
 /*Your turn
 Print the second element or item in your oddArray.
 */
+console.log("The second element is " + oddArray[1])
 
 /*Note we get undefined if we choose an index that is out 
 of bounds of the array.*/ 
@@ -64,6 +68,9 @@ console.log("Now at position 0: "+array[0]);
 /*Your turn
 Update your oddArray to hold 9 instead of 13. 
 Print the result*/
+console.log("\nUpdate oddArray: ");
+oddArray[3] = 9;
+console.log("Now at position 3: "+oddArray[3])
 
 /*Example
 Get the length of an array*/
@@ -88,7 +95,11 @@ the end of them. */
 
 /*Your turn
 Add 13 and 15 on to the end of oddArray. 
-Print out the length of oddArray. */ 
+Print out the length of oddArray. */
+oddArray.push(13);
+oddArray.push(15);
+console.log(oddArray);
+console.log("Now the new oddArray is: " + oddArray.length);
 
 /*Example
 Create a string from a given array*/
@@ -100,6 +111,25 @@ Create a string from your oddArray,
 but ensure the numbers are seperated by commas.
 Print the result.*/
 
+var oddResult = oddArray.join(" , ");
+console.log(oddResult);
+
 
 /*Bonus: Look up another function to interact with arrays
 and use it below. */
+
+oddArray.pop();
+console.log("After pop: " + oddArray);
+
+oddArray.shift();
+console.log("After shift: " + oddArray);
+
+oddArray.unshift(11);
+console.log("After unshift: " + oddArray);
+
+let newArray = oddArray.slice(0, 3);
+console.log("slice: " + newArray);
+
+oddArray.splice(3, 1, 23);
+console.log("added 23 at position " + oddArray);
+
