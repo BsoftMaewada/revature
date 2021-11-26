@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(136, 131, 131)
+}
+
+div {
+    background-color: antiquewhite;
+}
+p{
+    color: green;
+}
+.list-group{
+    font-size: 16pt;
+}
+.unordered-list{
+    font-family: 'San-serif' ;
+}
+.ordered-list{
+    font-family: 'Courier'
+}
+
+div.column {
+    width: 50%;
+    float: left;
+
+}
