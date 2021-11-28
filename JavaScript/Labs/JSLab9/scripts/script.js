@@ -117,3 +117,10 @@ console.log("!(falsy value)", !falsy);
 
 //Finished! Nice work! Remeber these things for 
 //the conditional blocks lab. 
+
+k = 5;
+for (i = 1; i <= 5; i++) {
+    k += i;
+    console.log(k)
+}
+console.log(k)

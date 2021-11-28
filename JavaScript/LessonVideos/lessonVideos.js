@@ -86,3 +86,27 @@ if (a > 4) {
     console.log("The opposite case ran");
 }
 
+// LOOPS
+
+//ForLoop
+for (let i = 0; i < 5; i++) {
+    console.log("executed")
+}
+
+//whileLoop
+
+let i = 0;
+
+while (i < 10) {
+    console.log("executed " + i + " times");
+    i++;
+
+    //using break statement
+    if (i = 5) {
+        break;
+    }
+    //using continue statement
+    if (i = 10) {
+        continue;
+    }
+}
