@@ -3,16 +3,19 @@
     <head>
         <title> Fahrenheit To Celcius</title>
         <link rel="stylesheet" href="styles.css">
-        <script>
-            //alert("HelloWorld")
-            let fahrenheit;
-            let fahToCel = fahrenheit => (fahrenheit - 32.0) * 5/9;
-            prompt("Enter a number of degrees fahrenheit to covert:" +fahrenheit);
-
-        </script>
     </head>
     <header>
         <a href="index.html"> < Back To Index </a> </header>
+        <script>
+            //alert("HelloWorld")
+            let fahrenheit = prompt("Enter a number of degrees fahrenheit to covert: " );
+            function fahToCel(celsius){
+            
+            return celsius = (fahrenheit - 32)/1.8
+            
+            }
+            alert(fahToCel().toFixed(2) +"deg celsius")
+        </script>
     </header>
     <body>
         <h1> Fahrenheit To Celsus</h1>
@@ -44,7 +47,8 @@
             <div>
                 <p>
                     <strong>
-                        Fahr = (cels * 9.0/0.5) + 32.0
+                        Fahrenheit = (Celsius * 9.0/0.5) + 32.0 <br />
+                        Celsius = (Fahrenheit - 32) / 1.8
                     </strong>
                 </p>
             </div>

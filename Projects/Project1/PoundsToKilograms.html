@@ -6,6 +6,16 @@
     </head>
     <header>
         <a href="index.html"> < Back To Index </a> </header>
+
+        <script>
+            let pounds = prompt("Enter pound(s) to convert: ");
+
+            function poundsToKg(kilograms) {
+                return kilograms = pounds * 0.45359237;
+            }
+
+            alert(poundsToKg().toFixed(2) +"kg");
+        </script>
     </header>
     <body>
                 <h1> Pounds To Kilograms </h1>
@@ -21,7 +31,7 @@
 
             <h3> Kilograms</h3>
             <h5> History </h5>
-             <div>
+            <div>
                 <p>
                     The kilogram is an SI base unit – this means that all other metric mass (weight) units are defined in terms of kilograms .
                 </p>
@@ -45,7 +55,5 @@
                         m<sub>(kg)</sub> = 5 lb × 0.45359237 = 2.268 kg
                 </p>
             </div>
-
-        <script src="" async defer></script>
     </body>
 </html>

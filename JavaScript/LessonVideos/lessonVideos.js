@@ -67,3 +67,22 @@ var num = 14;
 var s = "Hello";
 s = s + num + 23;
 console.log(s);
+
+//Boolean Logic and Algebra
+
+//Conditional Statements
+
+// if Statements
+
+/* if (condition) {
+    //statements
+} */
+
+var a = 5;
+
+if (a > 4) {
+    console.log("The number is greater than 3");
+} else {
+    console.log("The opposite case ran");
+}
+
