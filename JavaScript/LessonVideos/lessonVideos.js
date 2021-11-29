@@ -110,3 +110,42 @@ while (i < 10) {
         continue;
     }
 }
+
+// FUNCTION
+
+function talk() {
+    alert("Hello");
+}
+
+console.log(talk());
+
+function returner() {
+    p1 += 9;
+    console.log(p1);
+    alert("Hello" + p1);
+}
+
+returner(8);
+
+//OBJECTS
+
+var person = {
+    name: "John",
+    age: 21,
+    nickname: "J",
+    favoriteColor: [
+        "green",
+        "red",
+        "purple",
+    ],
+    talk: function () {
+        console.log("Adam says hello my name is " + this.name);
+    },
+    walk: function (spaces) {
+        console.log("Adam moved " + spaces + " spaces");
+    }
+};
+
+person.talk();
+person.walk();
+

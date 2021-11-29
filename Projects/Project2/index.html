@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Project II </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1> Project II </h1>
+        <h3> Guessing Game </h3>
+        <h4>Overview: </h4>
+        <p> For this project, you will need to generate a random number. 
+            Then you have a user guess until they successfully find the random number. 
+            You will use the prompt() and alert() functions to get the input from the 
+            user and let them know how they are doing. <br />
+        </p>
+
+        <h4>Generate the random number:</h4>
+
+        <p> You will need to use the Math.random() function that is built into JavaScript. This function generates a random number between 0 (inclusive) and 1 (exclusive). 
+            In other words, a number between 0 and 0.9999999...
+            You will also need to use the Math.floor(number) function, which takes the input number and returns that number rounded down to the nearest whole number.
+            If you combine these two functions, you can generate a number between any two values (we'll call them min and max). You'll start by generating a random number, and multiplying that by (max - min + 1). Then you'll take that number and round it down using Math.floor() and add the min. 
+
+            In other words, you'll have the following.
+            <section>
+                <div>
+                    let min = 3;
+                    let max = 10;
+                    let target = Math.random() * (max - min + 1); 
+                    target = Math.floor(target) + min;
+                </div>
+            </section>
+            <p> You should also create a variable to hold the user's guess. 
+                You may want to set it to a default value to start. For instance, let guess = 0;
+                Now comes time to set up the main game logic.
+            </p>
+            
+        <h4><Game logic:/h4> 
+        <p> When guessingGame.html loads, you should generate a target number as above. 
+            Then, you'll loop through the following:</p>
+        
+        <script src="script.js" ></script>
+    </body>
+</html>
